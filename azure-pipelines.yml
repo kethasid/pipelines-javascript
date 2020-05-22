@@ -21,7 +21,4 @@ steps:
     versionSpec: $(node_version)
   displayName: 'Install Node.js'
 
-- task: Npm@1
-  inputs:
-  command: 'install'
-  displayName: 'npm install and build'
+- script: npm install --only=dev
