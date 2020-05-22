@@ -27,10 +27,11 @@ steps:
   displayName: 'Install dependencies'
 
 - script: npm test
+  displayName: 'Running Unit tests'
 
 - task: PublishTestResults@2
   condition: succeededOrFailed()
   inputs:
     testRunner: JUnit
     testResultsFiles: '**/TEST-RESULTS.xml'
-  displayName: 'Unit tests'
+  displayName: 'publish tests'
