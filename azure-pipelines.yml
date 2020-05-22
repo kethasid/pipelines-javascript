@@ -33,3 +33,4 @@ steps:
   inputs:
     testRunner: JUnit
     testResultsFiles: '**/TEST-RESULTS.xml'
+  displayName: 'Unit tests'
